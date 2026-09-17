@@ -438,6 +438,27 @@ img {
     --circle-size: min(42vw, 180px);
   }
 
+  /* Encabezado compacto: evita desbordamiento horizontal en pantallas pequeñas */
+  .site-header__inner {
+    padding: 0 14px;
+    gap: 8px;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.28em;
+    padding-left: 0.28em;
+  }
+
+  .social-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .site-header__right {
+    gap: 2px;
+  }
+
   .circles__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
