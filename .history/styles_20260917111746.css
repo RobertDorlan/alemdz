@@ -325,8 +325,7 @@ img {
   opacity: 0.92;
 }
 
-.circle:hover,
-.circle-item:nth-child(even) .circle:hover {
+.circle:hover {
   transform: translateY(-4px);
   border-color: var(--color-black);
   box-shadow: 0 12px 26px rgba(28, 26, 25, 0.1);

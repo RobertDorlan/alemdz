@@ -256,9 +256,8 @@ img {
 
 .circles__grid {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  max-width: var(--content-max);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -280,9 +279,8 @@ img {
   border-radius: 50%;
   overflow: hidden;
   isolation: isolate;
-  border: 1px solid var(--color-medium-beige);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-  box-shadow: 0 6px 18px rgba(28, 26, 25, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 24px rgba(20, 18, 16, 0.08);
 }
 
 /* Imagen / textura de fondo (con degradado de reserva si falta la imagen) */
@@ -290,8 +288,8 @@ img {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-color: var(--color-medium-beige);
-  background-image: linear-gradient(135deg, var(--color-soft-pink) 0%, var(--color-medium-beige) 100%);
+  background-color: #d9d2c8;
+  background-image: linear-gradient(135deg, #cfc6ba 0%, #b7ab9b 100%);
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease, opacity 0.4s ease;
@@ -307,7 +305,7 @@ img {
 }
 
 .circle__label {
-  color: var(--color-warm-white);
+  color: #fff;
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.02rem;
@@ -325,20 +323,13 @@ img {
   opacity: 0.92;
 }
 
-.circle:hover,
-.circle-item:nth-child(even) .circle:hover {
+.circle:hover {
   transform: translateY(-4px);
-  border-color: var(--color-black);
-  box-shadow: 0 12px 26px rgba(28, 26, 25, 0.1);
+  box-shadow: 0 14px 32px rgba(20, 18, 16, 0.14);
 }
 
 .circle:hover .circle__overlay {
   background: var(--color-overlay-strong);
-}
-
-/* Alternancia sutil de bordes: beige y rosado suave */
-.circle-item:nth-child(even) .circle {
-  border-color: var(--color-soft-pink);
 }
 
 /* Estado de foco visible para navegación con teclado */
