@@ -40,12 +40,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    var(--color-warm-white) 0%,
-    var(--color-light-beige) 45%,
-    var(--color-soft-pink) 100%
-  );
+  background: var(--color-warm-white);
   color: var(--color-ink);
   font-family: var(--font-body);
   font-weight: 300;
@@ -201,68 +196,37 @@ img {
 }
 
 /* ============================================================= */
-/*  2. HERO DIVIDIDO: FOTO DEL ESTUDIO + MARCA                   */
+/*  2. FOTOGRAFÍA PANORÁMICA DEL ESTUDIO                         */
 /* ============================================================= */
 
 .studio-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 74vh; /* Escritorio: entre 65 y 80vh */
-  min-height: 460px;
+  aspect-ratio: 2006 / 784; /* Proporción real de la imagen: sin franjas */
   overflow: hidden;
-  line-height: 0;
+  background-color: #fcfaf7;
 }
 
-/* Columna de la foto */
-.studio-hero__photo {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-}
-
-.studio-hero__img {
+.studio-hero img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
-/* Difuminado de uni\u00f3n: la foto se funde hacia el negro del panel de marca (+ toque c\u00e1lido) */
-.studio-hero__photo::after {
+
+/* Tratamiento cálido muy ligero, conserva los detalles reales */
+.studio-hero::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background:
-    linear-gradient(
-      to right,
-      rgba(28, 26, 25, 0) 58%,
-      rgba(28, 26, 25, 0.7) 88%,
-      var(--color-black) 100%
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(231, 207, 204, 0.05) 0%,
-      rgba(0, 0, 0, 0) 40%,
-      rgba(28, 26, 25, 0.06) 100%
-    );
-}
-
-/* Columna de la marca (fondo negro editorial: el logo se funde) */
-.studio-hero__brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: clamp(24px, 4vw, 72px);
-  background: var(--color-black);
-}
-
-.studio-hero__logo {
-  width: min(72%, 380px);
-  height: auto;
-  object-fit: contain;
+  background: linear-gradient(
+    to bottom,
+    rgba(231, 207, 204, 0.05) 0%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(28, 26, 25, 0.06) 100%
+  );
 }
 
 /* ============================================================= */
@@ -270,11 +234,7 @@ img {
 /* ============================================================= */
 
 .circles {
-  background: linear-gradient(
-    180deg,
-    var(--color-light-beige) 0%,
-    var(--color-soft-pink) 100%
-  );
+  background: var(--color-warm-white);
   padding: clamp(48px, 8vw, 96px) 24px;
   text-align: center;
 }
@@ -314,80 +274,76 @@ img {
   flex: 0 0 auto;
 }
 
-/* Enlace circular: toda la superficie es clicable */
+/* Enlace: círculo + etiqueta debajo; toda la superficie es clicable */
+.circle-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: var(--circle-size); /* El item ocupa el ancho del círculo; el texto se ajusta debajo */
+  text-align: center;
+}
+
+/* Círculo con icono */
 .circle {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: var(--circle-size);
   height: var(--circle-size);
   border-radius: 50%;
-  overflow: hidden;
-  isolation: isolate;
+  background: var(--color-light-beige);
   border: 1px solid var(--color-medium-beige);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-  box-shadow: 0 6px 18px rgba(28, 26, 25, 0.06);
+  color: var(--color-ink);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
 }
 
-/* Imagen / textura de fondo (con degradado de reserva si falta la imagen) */
-.circle__media {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-color: var(--color-medium-beige);
-  background-image: linear-gradient(135deg, var(--color-soft-pink) 0%, var(--color-medium-beige) 100%);
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.5s ease, opacity 0.4s ease;
+.circle__icon {
+  display: flex;
+  color: var(--color-ink);
+  transition: transform 0.4s ease;
 }
 
-/* Velo para garantizar contraste y legibilidad del texto */
-.circle__overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--color-overlay);
-  transition: background 0.4s ease;
+.circle__icon svg {
+  width: clamp(38px, 7vw, 52px);
+  height: auto;
 }
 
-.circle__label {
-  color: var(--color-warm-white);
+/* Etiqueta debajo del círculo, en negro */
+.circle__caption {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0 16px;
-  text-align: center;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+  color: var(--color-ink);
 }
 
-/* Hover discreto: ligera ampliación y cambio de opacidad */
-.circle:hover .circle__media,
-.circle:focus-visible .circle__media {
-  transform: scale(1.06);
-  opacity: 0.92;
+/* Alternancia sutil: círculos beige y rosado suave */
+.circle-item:nth-child(even) .circle {
+  background: var(--color-soft-pink);
+  border-color: var(--color-muted-pink);
 }
 
-.circle:hover,
-.circle-item:nth-child(even) .circle:hover {
+/* Hover discreto: borde negro, ligera elevación y ampliación del icono */
+.circle-link:hover .circle,
+.circle-link:focus-visible .circle {
   transform: translateY(-4px);
   border-color: var(--color-black);
   box-shadow: 0 12px 26px rgba(28, 26, 25, 0.1);
 }
 
-.circle:hover .circle__overlay {
-  background: var(--color-overlay-strong);
-}
-
-/* Alternancia sutil de bordes: beige y rosado suave */
-.circle-item:nth-child(even) .circle {
-  border-color: var(--color-soft-pink);
+.circle-link:hover .circle__icon,
+.circle-link:focus-visible .circle__icon {
+  transform: scale(1.12);
 }
 
 /* Estado de foco visible para navegación con teclado */
-.circle:focus-visible {
+.circle-link:focus-visible {
+  outline: none;
+}
+
+.circle-link:focus-visible .circle {
   outline: 2px solid var(--color-ink);
   outline-offset: 4px;
 }
@@ -470,49 +426,23 @@ img {
 /*  RESPONSIVE                                                   */
 /* ============================================================= */
 
-/* Tablet: 3 + 2 (segunda fila centrada por justify-content:center) */
+/* Tablet: los círculos se reparten y centran sin solaparse */
 @media (max-width: 1024px) {
   :root {
-    --circle-size: 190px;
-  }
-
-  /* Fuerza como máximo 3 por fila para lograr la distribución 3 + 2 */
-  .circle-item {
-    flex: 0 0 auto;
-    max-width: calc((100% - 2 * clamp(24px, 3vw, 44px)) / 3);
+    --circle-size: 180px;
   }
 }
 
-/* Tablet y móvil: el hero dividido se apila (foto arriba, marca debajo) */
+/* Móvil: mantiene la proporción con altura mínima; cubre para conservar espejo y silla */
 @media (max-width: 768px) {
   .studio-hero {
-    grid-template-columns: 1fr;
-    height: auto;
-    min-height: 0;
+    aspect-ratio: 2006 / 784;
+    min-height: 200px;
   }
 
-  .studio-hero__photo {
-    height: 52vh; /* Móvil: entre 45 y 60vh */
-    min-height: 300px;
-  }
-
-  /* Apilado: el difuminado hacia el negro pasa a ser vertical (por abajo) */
-  .studio-hero__photo::after {
-    background: linear-gradient(
-      to bottom,
-      rgba(28, 26, 25, 0) 62%,
-      rgba(28, 26, 25, 0.7) 90%,
-      var(--color-black) 100%
-    );
-  }
-
-  .studio-hero__brand {
-    height: auto;
-    padding: clamp(28px, 8vw, 48px);
-  }
-
-  .studio-hero__logo {
-    width: min(60%, 260px);
+  .studio-hero img {
+    object-fit: cover;
+    object-position: center;
   }
 }
 
