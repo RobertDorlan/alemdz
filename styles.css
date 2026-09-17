@@ -348,6 +348,20 @@ img {
   text-align: center;
 }
 
+/* Retrato elegante encima del texto */
+.about__photo {
+  margin: 0 auto clamp(28px, 5vw, 44px);
+  width: min(300px, 74%);
+}
+
+.about__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 22px 48px rgba(28, 26, 25, 0.18);
+}
+
 .about__eyebrow {
   font-family: var(--font-body);
   font-weight: 400;
