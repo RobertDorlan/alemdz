@@ -66,17 +66,43 @@
             <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
           </svg>
         </a>
+        <a
+          class="social-link"
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path
+              d="M14 8.5V7c0-.7.3-1 1-1h1.5V3.2C16 3.1 15 3 14.1 3 11.8 3 10.3 4.4 10.3 7v1.5H8V11h2.3v9h2.9v-9h2.2l.4-2.5H14z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <a
+          class="social-link"
+          href="https://tiktok.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path
+              d="M16.5 3c.3 1.9 1.4 3.4 3.5 3.7v2.4c-1.2.1-2.4-.2-3.5-.9v5.9c0 3.2-2.4 5.4-5.2 5.4-2.9 0-5-2.1-5-4.9 0-2.9 2.4-5 5.6-4.7v2.6c-.4-.1-.9-.2-1.3-.1-1.1.1-2 .9-1.9 2.2.1 1.2 1 1.9 2 1.9 1.1 0 2-.8 2-2.1V3h3.3z"
+              fill="currentColor" />
+          </svg>
+        </a>
       </div>
     </div>
 
     <!-- Menú desplegable (usado sobre todo en móvil, disponible en todos los tamaños) -->
     <nav id="site-nav" class="site-nav" aria-label="Navegación principal" hidden>
       <ul class="site-nav__list">
-        <li><a href="/mi-historia">Mi historia</a></li>
-        <li><a href="/tips-de-belleza">Tips de belleza</a></li>
-        <li><a href="/tricologia">Tricología</a></li>
-        <li><a href="/servicios-y-precios">Servicios y Precios</a></li>
-        <li><a href="/bookings">Bookings</a></li>
+        <li><a href="mi-historia.html">Mi historia</a></li>
+        <li><a href="tips-de-belleza.html">Tips de belleza</a></li>
+        <li><a href="tricologia.html">Tricología</a></li>
+        <li><a href="servicios-y-precios.html">Servicios y Precios</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
       </ul>
     </nav>
   </header>
@@ -91,14 +117,23 @@
     <!-- Requisitos: horizontal / panorámica, ancho completo,          -->
     <!-- object-fit: cover, sin bordes redondeados, sin tarjeta.       -->
     <!-- ============================================================= -->
-    <section class="studio-hero" aria-label="Fotografía del estudio de ALEMDZ">
-      <img
-        class="studio-hero__img"
-        src="public/images/studio/alemdz-studio-hero.jpg"
-        alt="Estudio de ALEMDZ: espacio profesional de peluquería, luminoso y cuidado, con estaciones de trabajo y una estética editorial."
-        loading="eager"
-        decoding="async"
-      />
+    <section class="studio-hero" aria-label="Estudio de ALEMDZ y marca AV Hair Professional">
+      <div class="studio-hero__photo">
+        <img
+          class="studio-hero__img"
+          src="public/images/studio/alemdz-studio-hero.jpg"
+          alt="Estudio de ALEMDZ: espacio profesional de peluquería, luminoso y cuidado, con estaciones de trabajo y una estética editorial."
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <div class="studio-hero__brand">
+        <img
+          class="studio-hero__logo"
+          src="public/images/brand/logo-ale.jpg"
+          alt="Logo de AV Hair Professional by Alejandra Mendoza"
+        />
+      </div>
     </section>
 
     <!-- ============================================================= -->
@@ -118,7 +153,7 @@
 
       <ul class="circles__grid">
         <li class="circle-item">
-          <a class="circle" href="/mi-historia">
+          <a class="circle" href="mi-historia.html">
             <span
               class="circle__media"
               style="background-image: url('public/images/circles/mi-historia.jpg');"
@@ -130,7 +165,7 @@
         </li>
 
         <li class="circle-item">
-          <a class="circle" href="/tips-de-belleza">
+          <a class="circle" href="tips-de-belleza.html">
             <span
               class="circle__media"
               style="background-image: url('public/images/circles/tips-de-belleza.jpg');"
@@ -142,7 +177,7 @@
         </li>
 
         <li class="circle-item">
-          <a class="circle" href="/tricologia">
+          <a class="circle" href="tricologia.html">
             <span
               class="circle__media"
               style="background-image: url('public/images/circles/tricologia.jpg');"
@@ -154,7 +189,7 @@
         </li>
 
         <li class="circle-item">
-          <a class="circle" href="/servicios-y-precios">
+          <a class="circle" href="servicios-y-precios.html">
             <span
               class="circle__media"
               style="background-image: url('public/images/circles/servicios-y-precios.jpg');"
@@ -166,7 +201,7 @@
         </li>
 
         <li class="circle-item">
-          <a class="circle" href="/bookings">
+          <a class="circle" href="bookings.html">
             <span
               class="circle__media"
               style="background-image: url('public/images/circles/bookings.jpg');"
@@ -177,6 +212,28 @@
           </a>
         </li>
       </ul>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. ACERCA DE MÍ                                               -->
+    <!-- ============================================================= -->
+    <section class="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <p class="about__eyebrow">La persona detrás de ALEMDZ</p>
+        <h2 id="about-title" class="about__title">Acerca de mí</h2>
+        <p class="about__lead">
+          (Texto de ejemplo) Soy Alejandra Mendoza, apasionada por la belleza y el
+          cuidado del cabello. Combino una mirada editorial con la técnica
+          profesional para acompañar a cada persona en su historia.
+        </p>
+        <p class="about__text">
+          (Texto de ejemplo) Este es un espacio provisional para presentarte de
+          forma breve: quién eres, qué te inspira y qué pueden esperar quienes
+          visitan tu estudio. Reemplaza este contenido por tu presentación real
+          cuando quieras.
+        </p>
+        <a class="about__link" href="mi-historia.html">Conoce mi historia →</a>
+      </div>
     </section>
   </main>
 

@@ -39,7 +39,13 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-bg);
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--color-warm-white) 0%,
+    var(--color-light-beige) 45%,
+    var(--color-soft-pink) 100%
+  );
   color: var(--color-ink);
   font-family: var(--font-body);
   font-weight: 300;
@@ -90,6 +96,9 @@ img {
 
 .site-header__right {
   justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* Logotipo tipográfico */
@@ -192,36 +201,68 @@ img {
 }
 
 /* ============================================================= */
-/*  2. FOTOGRAFÍA PANORÁMICA DEL ESTUDIO                         */
+/*  2. HERO DIVIDIDO: FOTO DEL ESTUDIO + MARCA                   */
 /* ============================================================= */
 
 .studio-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  position: relative;
+  height: 74vh; /* Escritorio: entre 65 y 80vh */
+  min-height: 460px;
+  overflow: hidden;
   line-height: 0;
+}
+
+/* Columna de la foto */
+.studio-hero__photo {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 .studio-hero__img {
   width: 100%;
-  height: 74vh; /* Escritorio: entre 65 y 80vh */
-  min-height: 420px;
+  height: 100%;
   object-fit: cover;
-  object-position: center 40%; /* Mantiene visible el punto focal */
+  object-position: center;
 }
 
-/* Tratamiento cálido muy ligero (capa beige/rosada <= 8%), conserva los detalles reales */
-.studio-hero::after {
+/* Difuminado de uni\u00f3n: la foto se funde hacia el negro del panel de marca (+ toque c\u00e1lido) */
+.studio-hero__photo::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(231, 207, 204, 0.05) 0%,
-    rgba(0, 0, 0, 0) 35%,
-    rgba(0, 0, 0, 0) 65%,
-    rgba(28, 26, 25, 0.06) 100%
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(28, 26, 25, 0) 58%,
+      rgba(28, 26, 25, 0.7) 88%,
+      var(--color-black) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(231, 207, 204, 0.05) 0%,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(28, 26, 25, 0.06) 100%
+    );
+}
+
+/* Columna de la marca (fondo negro editorial: el logo se funde) */
+.studio-hero__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: clamp(24px, 4vw, 72px);
+  background: var(--color-black);
+}
+
+.studio-hero__logo {
+  width: min(72%, 380px);
+  height: auto;
+  object-fit: contain;
 }
 
 /* ============================================================= */
@@ -229,7 +270,11 @@ img {
 /* ============================================================= */
 
 .circles {
-  background: var(--color-light-beige);
+  background: linear-gradient(
+    180deg,
+    var(--color-light-beige) 0%,
+    var(--color-soft-pink) 100%
+  );
   padding: clamp(48px, 8vw, 96px) 24px;
   text-align: center;
 }
@@ -348,6 +393,80 @@ img {
 }
 
 /* ============================================================= */
+/*  4. ACERCA DE MÍ                                              */
+/* ============================================================= */
+
+.about {
+  background: var(--color-warm-white);
+  padding: clamp(56px, 9vw, 112px) 24px;
+}
+
+.about__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.82rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  margin: 0 0 14px;
+}
+
+.about__title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.about__title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 18px auto 0;
+  background: var(--color-muted-pink);
+}
+
+.about__lead {
+  font-size: 1.15rem;
+  color: var(--color-dark-gray);
+  margin: 28px 0 0;
+}
+
+.about__text {
+  color: var(--color-dark-gray);
+  line-height: 1.75;
+  margin: 18px 0 0;
+}
+
+.about__link {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-muted-pink);
+  padding-bottom: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.about__link:hover,
+.about__link:focus-visible {
+  color: var(--color-muted-pink);
+  border-color: var(--color-black);
+}
+
+/* ============================================================= */
 /*  RESPONSIVE                                                   */
 /* ============================================================= */
 
@@ -364,16 +483,44 @@ img {
   }
 }
 
+/* Tablet y móvil: el hero dividido se apila (foto arriba, marca debajo) */
+@media (max-width: 768px) {
+  .studio-hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+  }
+
+  .studio-hero__photo {
+    height: 52vh; /* Móvil: entre 45 y 60vh */
+    min-height: 300px;
+  }
+
+  /* Apilado: el difuminado hacia el negro pasa a ser vertical (por abajo) */
+  .studio-hero__photo::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(28, 26, 25, 0) 62%,
+      rgba(28, 26, 25, 0.7) 90%,
+      var(--color-black) 100%
+    );
+  }
+
+  .studio-hero__brand {
+    height: auto;
+    padding: clamp(28px, 8vw, 48px);
+  }
+
+  .studio-hero__logo {
+    width: min(60%, 260px);
+  }
+}
+
 /* Móvil: cuadrícula de 2 columnas, último elemento centrado */
 @media (max-width: 640px) {
   :root {
     --header-height: 68px;
     --circle-size: min(42vw, 180px);
-  }
-
-  .studio-hero__img {
-    height: 52vh; /* Móvil: entre 45 y 60vh */
-    min-height: 300px;
   }
 
   .circles__grid {
@@ -401,4 +548,154 @@ img {
   * {
     transition: none !important;
   }
+}
+
+/* ============================================================= */
+/*  PÁGINAS INTERIORES                                           */
+/* ============================================================= */
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 96px) 24px clamp(64px, 10vw, 120px);
+}
+
+.page__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.82rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  margin: 0 0 14px;
+}
+
+.page__title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.page__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin: 20px 0 0;
+  background: var(--color-muted-pink);
+}
+
+.page__lead {
+  font-size: 1.15rem;
+  color: var(--color-dark-gray);
+  margin: 28px 0 0;
+}
+
+.page__body {
+  margin-top: 36px;
+  color: var(--color-dark-gray);
+}
+
+.page__body h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  color: var(--color-ink);
+  margin: 40px 0 12px;
+}
+
+.page__body p {
+  margin: 0 0 16px;
+  line-height: 1.75;
+}
+
+.page__body ul {
+  margin: 0 0 16px;
+  padding-left: 1.2em;
+  line-height: 1.75;
+}
+
+/* Nota destacada (caja beige con borde rosado suave) */
+.page__note {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: var(--color-light-beige);
+  border: 1px solid var(--color-soft-pink);
+  border-radius: 8px;
+  color: var(--color-dark-gray);
+  font-size: 0.98rem;
+}
+
+/* Precios sencillos */
+.price-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-medium-beige);
+}
+
+.price-list .price-list__name {
+  color: var(--color-ink);
+}
+
+.price-list .price-list__value {
+  color: var(--color-ink);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Enlace de regreso */
+.page__back {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  transition: color 0.3s ease;
+}
+
+.page__back:hover,
+.page__back:focus-visible {
+  color: var(--color-muted-pink);
+}
+
+/* Botón editorial (para CTA de reservas) */
+.btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 14px 28px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: 1px solid var(--color-black);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn--booking {
+  background: var(--color-muted-pink);
+  color: var(--color-black);
+  border-color: var(--color-muted-pink);
+}
+
+.btn--booking:hover,
+.btn--booking:focus-visible {
+  background: var(--color-black);
+  color: var(--color-warm-white);
+  border-color: var(--color-black);
 }
