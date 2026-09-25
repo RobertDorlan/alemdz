@@ -234,6 +234,37 @@
     "Reemplaza este texto por la descripción real de tu experiencia Head Spa cuando quieras.":
       "Replace this text with the real description of your Head Spa experience whenever you like.",
 
+    "Un head spa es un tratamiento de relajación y cuidado del cuero cabelludo, originado principalmente en Japón. Combina técnicas de masaje con limpieza profunda y cuidado capilar.":
+      "A head spa is a relaxation and scalp-care treatment, originating mainly in Japan. It combines massage techniques with deep cleansing and hair care.",
+    "¿Qué incluye?": "What does it include?",
+    "Evaluación básica del cuero cabelludo": "Basic scalp assessment",
+    "Limpieza profunda": "Deep cleansing",
+    "Exfoliación según necesidad": "Exfoliation as needed",
+    "Masaje de cuero cabelludo, cuello y hombros": "Scalp, neck and shoulder massage",
+    "Tratamiento hidratante o nutritivo": "Moisturizing or nourishing treatment",
+    "Ritual de relajación": "Relaxation ritual",
+    "Lavado y acondicionamiento": "Wash and conditioning",
+    "Secado y acabado final": "Blow-dry and final finish",
+    "Una experiencia diseñada para cuidar el cuero cabelludo, revitalizar el cabello y disfrutar de un momento de desconexión. ✨":
+      "An experience designed to care for the scalp, revitalize the hair and enjoy a moment of disconnection. ✨",
+    "Beneficios": "Benefits",
+    "Limpia profundamente el cuero cabelludo": "Deeply cleanses the scalp",
+    "Ayuda a eliminar residuos y acumulación de productos": "Helps remove residue and product build-up",
+    "Favorece una sensación de frescura y ligereza": "Promotes a feeling of freshness and lightness",
+    "Ayuda a liberar tensión en cuero cabelludo, cuello y hombros":
+      "Helps release tension in the scalp, neck and shoulders",
+    "Aporta hidratación y suavidad al cabello": "Adds hydration and softness to the hair",
+    "Promueve una experiencia de relajación y bienestar": "Promotes an experience of relaxation and wellbeing",
+    "Deja el cabello limpio, ligero y con un acabado más saludable":
+      "Leaves the hair clean, light and with a healthier finish",
+    "Un ritual para cuidar tu cuero cabelludo, tu cabello y también desconectar. ✨":
+      "A ritual to care for your scalp, your hair and also to disconnect. ✨",
+    "¿Cada cuánto se puede realizar?": "How often can it be done?",
+    "El Head Spa puede realizarse cada 3 a 4 semanas, adaptando la frecuencia a las necesidades del cuero cabelludo y el estado del cabello.":
+      "The Head Spa can be done every 3 to 4 weeks, adapting the frequency to the needs of the scalp and the condition of the hair.",
+    "Para mantenimiento y bienestar, una sesión mensual es una excelente opción. ✨":
+      "For maintenance and wellbeing, a monthly session is an excellent option. ✨",
+
     "(Texto de ejemplo) Mi formación como comunicadora social y mi pasión por la fotografía se unen para contar historias con una mirada editorial.":
       "(Sample text) My background as a social communicator and my passion for photography come together to tell stories with an editorial eye.",
     "(Ejemplo) Aquí compartiré mi trabajo relacionado con el periodismo, la comunicación y la fotografía: proyectos, colaboraciones y contenido que conecta a las personas a través de las historias.":
