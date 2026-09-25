@@ -41,10 +41,10 @@
     "serv.cta": "Book an appointment",
     "spa.eyebrow": "Care & wellbeing",
     "spa.title": "Head Spa",
-    "spa.cta": "Book via Instagram",
+    "spa.cta": "Book via WhatsApp",
     "book.eyebrow": "Bookings",
     "book.title": "Bookings",
-    "book.cta": "Book via Instagram"
+    "book.cta": "Book via WhatsApp"
   };
 
   // Traducciones por contenido (párrafos, títulos, listas…)
