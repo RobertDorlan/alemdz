@@ -261,7 +261,48 @@
     "(Ejemplo) Evita lavados demasiado frecuentes con agua muy caliente.":
       "(Sample) Avoid washing too often with very hot water.",
     "Este es contenido provisional. Aquí irán tus artículos y consejos reales.":
-      "This is placeholder content. Your real articles and tips will go here."
+      "This is placeholder content. Your real articles and tips will go here.",
+
+    "Tarifas de servicios": "Service rates",
+    "Precio": "Price",
+    "Corte": "Cut",
+    "Lavado": "Wash",
+    "«Blow dry» (Secado)": "«Blow dry» (drying)",
+    "Servicios combinados": "Combined services",
+    "Hidratación": "Hydration",
+    "Lavado + Hidratación + Blowdry": "Wash + Hydration + Blow-dry",
+    "Lavado + Corte + Hidratación + Blowdry": "Wash + Cut + Hydration + Blow-dry",
+    "Botox Capilar Brasileño": "Brazilian Hair Botox",
+    "Alisados (Keratina o Smoothing Brasileño)": "Straightening (Keratin or Brazilian Smoothing)",
+    "Tinte (Retoque de raíz)": "Color (Root retouch)",
+    "Tinte completo": "Full color",
+    "Highlights (mechas) o Full Head": "Highlights or Full Head",
+    "Baby Lights": "Baby Lights",
+    "Balayage": "Balayage",
+    "Face Framing (contorno frontal)": "Face Framing (front contour)",
+    "Contorno completo (Half Head Highlight alrededor de toda la cabeza)":
+      "Full contour (Half Head Highlight all around the head)",
+    "Color con técnicas de balayage o highlight sin decoloración (solo con tinte)":
+      "Color with balayage or highlight techniques without bleach (color only)",
+
+    "(Incluye lavado, botox capilar y sellado)": "(Includes wash, hair botox and sealing)",
+    "(Incluye lavado, sellado, tratamiento pre y post químico)":
+      "(Includes wash, sealing, pre- and post-chemical treatment)",
+    "(Incluye lavado y blowdry)": "(Includes wash and blow-dry)",
+
+    "Cabello corto": "Short hair",
+    "Cabello medio": "Medium hair",
+    "Cabello largo": "Long hair",
+    "Cabello XL": "XL hair",
+    "Cabello corto o medio": "Short or medium hair",
+    "Cabello largo o XL": "Long or XL hair",
+
+    "Lavado + Secado (corto/medio)": "Wash + Blow-dry (short/medium)",
+    "Lavado + Secado (largo)": "Wash + Blow-dry (long)",
+    "Lavado + Secado (XL)": "Wash + Blow-dry (XL)",
+    "Lavado + Corte + Secado (corto/medio)": "Wash + Cut + Blow-dry (short/medium)",
+    "Lavado + Corte + Secado (largo)": "Wash + Cut + Blow-dry (long)",
+    "Lavado + Corte + Secado (XL)": "Wash + Cut + Blow-dry (XL)"
   };
 
   var current = localStorage.getItem(STORAGE_KEY) || "es";
