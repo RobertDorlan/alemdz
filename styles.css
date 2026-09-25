@@ -570,6 +570,19 @@ img {
   line-height: 1.75;
 }
 
+/* Cita destacada dentro de una historia */
+.page__quote {
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+  border-left: 2px solid var(--color-muted-pink);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
 /* Nota destacada (caja beige con borde rosado suave) */
 .page__note {
   margin-top: 32px;
