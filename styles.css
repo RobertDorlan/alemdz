@@ -249,6 +249,51 @@ img {
   text-align: center;
 }
 
+/* Sección de bienvenida entre el banner y los círculos */
+.intro {
+  background: var(--color-warm-white);
+  padding: clamp(44px, 7vw, 76px) 24px clamp(4px, 1vw, 8px);
+  text-align: center;
+}
+
+.intro__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.82rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  margin: 0 0 16px;
+}
+
+.intro__text {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  line-height: 1.55;
+  color: var(--color-ink);
+}
+
+/* Eyebrow y subtítulo de la sección de círculos */
+.circles__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  margin: 0 0 10px;
+}
+
+.circles__subtitle {
+  max-width: 520px;
+  margin: -12px auto clamp(32px, 5vw, 52px);
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+}
+
 .circles__title {
   font-family: var(--font-display);
   font-weight: 300;

@@ -21,6 +21,12 @@
     "home.hero_alt":
       "BYALEMDZ professional studio with the AM logo — Hair Professional by Alejandra Mendoza, photography set, vanity with lit mirror and an elegant chair.",
     "home.explore": "Explore my world",
+    "home.intro_eyebrow": "Welcome",
+    "home.intro_text":
+      "Professional hairdressing, trichology and head spa with a close, personalized approach, caring for the health of your hair and scalp.",
+    "home.intro_cta": "Book an appointment",
+    "home.explore_eyebrow": "Discover",
+    "home.explore_sub": "Choose an area to learn more about my work and services.",
     "home.about_eyebrow": "The person behind BYALEMDZ",
     "home.about_title": "About me",
     "home.about_lead":
