@@ -265,6 +265,33 @@
     "Para mantenimiento y bienestar, una sesión mensual es una excelente opción. ✨":
       "For maintenance and wellbeing, a monthly session is an excellent option. ✨",
 
+    "Tratamientos para el cuidado capilar": "Hair care treatments",
+    "Nuestros protocolos pueden incluir:": "Our protocols may include:",
+    "🔴 Fotobiomodulación LED — tecnología de luz utilizada como apoyo en protocolos para caída y estimulación del crecimiento capilar.":
+      "🔴 LED photobiomodulation — light technology used to support protocols for hair loss and hair-growth stimulation.",
+    "🫧 Ozono/Vapor capilar — ayuda a realizar una limpieza profunda y preparar el cuero cabelludo para el tratamiento.":
+      "🫧 Ozone/hair steam — helps carry out a deep cleanse and prepare the scalp for the treatment.",
+    "⚡ Alta frecuencia capilar — complemento cosmético utilizado después de la limpieza del cuero cabelludo.":
+      "⚡ Scalp high frequency — cosmetic complement used after cleansing the scalp.",
+    "♨️ Radiofrecuencia capilar — tecnología térmica que puede incorporarse en determinados protocolos según las necesidades del cuero cabelludo.":
+      "♨️ Scalp radiofrequency — thermal technology that can be incorporated into certain protocols according to the scalp's needs.",
+    "💆‍♀️ Masaje y estimulación manual — técnicas de masaje del cuero cabelludo para complementar la experiencia y el protocolo.":
+      "💆‍♀️ Massage and manual stimulation — scalp massage techniques to complement the experience and the protocol.",
+    "🧴 Tratamientos cosméticos personalizados — activos seleccionados según las características y necesidades del cuero cabelludo y cabello.":
+      "🧴 Personalized cosmetic treatments — actives selected according to the characteristics and needs of the scalp and hair.",
+    "En Alemdz ofrecemos protocolos no invasivos diseñados para cuidar el cuero cabelludo y complementar tratamientos dirigidos a la caída y al crecimiento capilar.":
+      "At Alemdz we offer non-invasive protocols designed to care for the scalp and complement treatments aimed at hair loss and hair growth.",
+    "Nuestros protocolos": "Our protocols",
+    "Estimulación capilar": "Hair stimulation",
+    "Tratamiento para la caída": "Hair loss treatment",
+    "Limpieza profunda del cuero cabelludo": "Deep scalp cleansing",
+    "Equilibrio del cuero cabelludo": "Scalp balance",
+    "Hidratación y reparación": "Hydration and repair",
+    "Nuestros protocolos AM": "Our AM protocols",
+    "Tratamiento anticaída": "Anti-hair-loss treatment",
+    "Hidratación del cuero cabelludo": "Scalp hydration",
+    "Tratamiento reparador capilar": "Repairing hair treatment",
+
     "(Texto de ejemplo) Mi formación como comunicadora social y mi pasión por la fotografía se unen para contar historias con una mirada editorial.":
       "(Sample text) My background as a social communicator and my passion for photography come together to tell stories with an editorial eye.",
     "(Ejemplo) Aquí compartiré mi trabajo relacionado con el periodismo, la comunicación y la fotografía: proyectos, colaboraciones y contenido que conecta a las personas a través de las historias.":
