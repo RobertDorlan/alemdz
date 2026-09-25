@@ -723,12 +723,25 @@ img {
   }
 }
 
+/* ===== Foto de Head Spa ===== */
+.spa-photo {
+  margin: 40px 0 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px -30px rgba(28, 26, 25, 0.6);
+  background: var(--color-light-beige);
+}
+
+.spa-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ===== Tarifas de servicios ===== */
 .pricing {
   margin-top: 56px;
 }
-
-/* En Hair & Services: tarifas primero, luego la descripción de servicios */
 .page__body--reorder {
   display: flex;
   flex-direction: column;
