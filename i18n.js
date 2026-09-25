@@ -44,7 +44,8 @@
     "spa.cta": "Book via WhatsApp",
     "book.eyebrow": "Bookings",
     "book.title": "Bookings",
-    "book.cta": "Book via WhatsApp"
+    "book.cta": "Book via WhatsApp",
+    "footer.tagline": "Hair Professional · Trichology · Head Spa"
   };
 
   // Traducciones por contenido (párrafos, títulos, listas…)

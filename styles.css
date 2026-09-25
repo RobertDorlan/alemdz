@@ -373,10 +373,39 @@ img {
   text-align: center;
 }
 
+/* Editorial: foto y texto en dos columnas en pantallas grandes */
+@media (min-width: 880px) {
+  .about__inner {
+    max-width: 1040px;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: clamp(40px, 6vw, 72px);
+    align-items: center;
+    text-align: left;
+  }
+
+  .about__content {
+    text-align: left;
+  }
+
+  .about__inner .about__title::after {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 /* Retrato elegante encima del texto */
 .about__photo {
   margin: 0 auto clamp(28px, 5vw, 44px);
   width: min(300px, 74%);
+}
+
+@media (min-width: 880px) {
+  .about__photo {
+    margin: 0;
+    width: 100%;
+    max-width: 360px;
+  }
 }
 
 .about__photo img {
@@ -444,6 +473,75 @@ img {
 .about__link:focus-visible {
   color: var(--color-muted-pink);
   border-color: var(--color-black);
+}
+
+/* ============================================================= */
+/*  PIE DE PÁGINA                                                */
+/* ============================================================= */
+.site-footer {
+  background: var(--color-ink);
+  color: var(--color-warm-white);
+  padding: clamp(48px, 7vw, 72px) 24px;
+}
+
+.site-footer__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.site-footer__brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding-left: 0.28em;
+}
+
+.site-footer__tagline {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(252, 250, 247, 0.72);
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 18px;
+  margin: 4px 0 2px;
+}
+
+.site-footer__social a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(252, 250, 247, 0.28);
+  color: var(--color-warm-white);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.site-footer__social a:hover,
+.site-footer__social a:focus-visible {
+  background: var(--color-warm-white);
+  color: var(--color-ink);
+  border-color: var(--color-warm-white);
+}
+
+.site-footer__copy {
+  margin: 6px 0 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: rgba(252, 250, 247, 0.55);
 }
 
 /* ============================================================= */
