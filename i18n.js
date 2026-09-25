@@ -19,7 +19,7 @@
     // Portada
     "home.hero_aria": "BYALEMDZ studio photo",
     "home.hero_alt":
-      "BYALEMDZ studio: professional hair salon with vanity, round mirror, elegant chair and golden details, bright and editorial.",
+      "BYALEMDZ professional studio with the AM logo — Hair Professional by Alejandra Mendoza, photography set, vanity with lit mirror and an elegant chair.",
     "home.explore": "Explore my world",
     "home.about_eyebrow": "The person behind BYALEMDZ",
     "home.about_title": "About me",

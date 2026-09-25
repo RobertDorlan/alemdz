@@ -226,7 +226,7 @@ img {
 
 .studio-hero {
   width: 100%;
-  aspect-ratio: 1662 / 640; /* Proporción real de la imagen: sin franjas */
+  aspect-ratio: 2020 / 779; /* Proporción real de la imagen: sin franjas */
   overflow: hidden;
   background-color: #fcfaf7;
 }
@@ -457,15 +457,14 @@ img {
   }
 }
 
-/* Móvil: mantiene la proporción con altura mínima; cubre para conservar espejo y silla */
+/* Móvil: mantiene la proporción real; el banner completo (incluido el logo) siempre visible */
 @media (max-width: 768px) {
   .studio-hero {
-    aspect-ratio: 1662 / 640;
-    min-height: 200px;
+    aspect-ratio: 2020 / 779;
   }
 
   .studio-hero img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 }
