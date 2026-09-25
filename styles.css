@@ -201,7 +201,7 @@ img {
 
 .studio-hero {
   width: 100%;
-  aspect-ratio: 2006 / 784; /* Proporción real de la imagen: sin franjas */
+  aspect-ratio: 1662 / 640; /* Proporción real de la imagen: sin franjas */
   overflow: hidden;
   background-color: #fcfaf7;
 }
@@ -435,7 +435,7 @@ img {
 /* Móvil: mantiene la proporción con altura mínima; cubre para conservar espejo y silla */
 @media (max-width: 768px) {
   .studio-hero {
-    aspect-ratio: 2006 / 784;
+    aspect-ratio: 1662 / 640;
     min-height: 200px;
   }
 
