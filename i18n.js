@@ -277,6 +277,7 @@
     "Tinte (Retoque de raíz)": "Color (Root retouch)",
     "Tinte completo": "Full color",
     "Highlights (mechas) o Full Head": "Highlights or Full Head",
+    "Highlights (mechas)": "Highlights",
     "Baby Lights": "Baby Lights",
     "Balayage": "Balayage",
     "Face Framing (contorno frontal)": "Face Framing (front contour)",
@@ -294,12 +295,14 @@
     "Cabello medio": "Medium hair",
     "Cabello largo": "Long hair",
     "Cabello XL": "XL hair",
+    "Cabello súper corto": "Super short hair",
     "Cabello corto o medio": "Short or medium hair",
     "Cabello largo o XL": "Long or XL hair",
 
     "Lavado + Secado (corto/medio)": "Wash + Blow-dry (short/medium)",
     "Lavado + Secado (largo)": "Wash + Blow-dry (long)",
     "Lavado + Secado (XL)": "Wash + Blow-dry (XL)",
+    "Lavado + Corte + Secado": "Wash + Cut + Blow-dry",
     "Lavado + Corte + Secado (corto/medio)": "Wash + Cut + Blow-dry (short/medium)",
     "Lavado + Corte + Secado (largo)": "Wash + Cut + Blow-dry (long)",
     "Lavado + Corte + Secado (XL)": "Wash + Cut + Blow-dry (XL)"
