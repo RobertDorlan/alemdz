@@ -248,11 +248,11 @@ img {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  max-width: var(--content-max);
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
-  gap: clamp(24px, 3vw, 44px);
+  justify-items: center;
+  gap: clamp(28px, 4vw, 52px);
 }
 
 .circle-item {
@@ -485,11 +485,6 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  /* El último círculo queda centrado ocupando el ancho completo */
-  .circle-item:last-child {
-    grid-column: 1 / -1;
   }
 }
 
