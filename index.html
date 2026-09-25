@@ -27,12 +27,13 @@
   <!-- ============================================================= -->
   <header class="site-header">
     <div class="site-header__inner">
-      <!-- Izquierda: icono de menú discreto -->
+      <!-- Izquierda: menú discreto e idioma -->
       <div class="site-header__left">
         <button
           class="menu-toggle"
           type="button"
           aria-label="Abrir menú"
+          data-i18n-attr="aria-label:chrome.menu"
           aria-expanded="false"
           aria-controls="site-nav"
         >
@@ -40,11 +41,12 @@
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
         </button>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">EN</button>
       </div>
 
       <!-- Centro: logotipo tipográfico (enlace a inicio) -->
       <div class="site-header__center">
-        <a class="brand" href="index.html" aria-label="BYALEMDZ — Ir a la página de inicio">
+        <a class="brand" href="index.html" aria-label="BYALEMDZ — Ir a la página de inicio" data-i18n-attr="aria-label:chrome.home_aria">
           BYALEMDZ
         </a>
       </div>
@@ -98,11 +100,12 @@
     <!-- Menú desplegable (usado sobre todo en móvil, disponible en todos los tamaños) -->
     <nav id="site-nav" class="site-nav" aria-label="Navegación principal" hidden>
       <ul class="site-nav__list">
-        <li><a href="mi-historia.html">Mi historia</a></li>
-        <li><a href="tips-de-belleza.html">Tips de belleza</a></li>
-        <li><a href="tricologia.html">Tricología</a></li>
-        <li><a href="servicios-y-precios.html">Servicios y Precios</a></li>
-        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="mi-historia.html" data-i18n="nav.mihistoria">Mi historia</a></li>
+        <li><a href="journalist-photo.html" data-i18n="nav.journalist">Journalist &amp; Photo</a></li>
+        <li><a href="tips-de-belleza.html" data-i18n="nav.belleza">Belleza &amp; Tips</a></li>
+        <li><a href="tricologia.html" data-i18n="nav.tricologia">Tricología</a></li>
+        <li><a href="servicios-y-precios.html" data-i18n="nav.hair">Hair &amp; Services</a></li>
+        <li><a href="head-spa.html" data-i18n="nav.headspa">Head Spa</a></li>
       </ul>
     </nav>
   </header>
@@ -117,11 +120,12 @@
     <!-- Requisitos: horizontal / panorámica, ancho completo,          -->
     <!-- object-fit: cover, sin bordes redondeados, sin tarjeta.       -->
     <!-- ============================================================= -->
-    <section class="studio-hero" aria-label="Fotografía del estudio de BYALEMDZ">
+    <section class="studio-hero" aria-label="Fotografía del estudio de BYALEMDZ" data-i18n-attr="aria-label:home.hero_aria">
       <img
         class="studio-hero__img"
         src="images/alemdz-studio-hero-wide-3.jpg"
         alt="Estudio de BYALEMDZ: espacio profesional de peluquería con tocador, espejo redondo, sillón elegante y detalles dorados, luminoso y con estética editorial."
+        data-i18n-attr="alt:home.hero_alt"
         loading="eager"
         decoding="async"
       />
@@ -140,7 +144,7 @@
     <!--   public/images/circles/bookings.jpg                          -->
     <!-- ============================================================= -->
     <section class="circles" aria-labelledby="circles-title">
-      <h2 id="circles-title" class="circles__title">Explora mi mundo</h2>
+      <h2 id="circles-title" class="circles__title" data-i18n="home.explore">Explora mi mundo</h2>
 
       <ul class="circles__grid">
         <li class="circle-item">
@@ -153,7 +157,7 @@
                 </svg>
               </span>
             </span>
-            <span class="circle__caption">Mi historia</span>
+            <span class="circle__caption" data-i18n="nav.mihistoria">Mi historia</span>
           </a>
         </li>
 
@@ -167,7 +171,7 @@
                 </svg>
               </span>
             </span>
-            <span class="circle__caption">Journalist &amp; Photo</span>
+            <span class="circle__caption" data-i18n="nav.journalist">Journalist &amp; Photo</span>
           </a>
         </li>
 
@@ -181,7 +185,7 @@
                 </svg>
               </span>
             </span>
-            <span class="circle__caption">Belleza &amp; Tips</span>
+            <span class="circle__caption" data-i18n="nav.belleza">Belleza &amp; Tips</span>
           </a>
         </li>
 
@@ -196,7 +200,7 @@
                 </svg>
               </span>
             </span>
-            <span class="circle__caption">Tricología</span>
+            <span class="circle__caption" data-i18n="nav.tricologia">Tricología</span>
           </a>
         </li>
 
@@ -212,7 +216,7 @@
                 </svg>
               </span>
             </span>
-            <span class="circle__caption">Hair &amp; Services</span>
+            <span class="circle__caption" data-i18n="nav.hair">Hair &amp; Services</span>
           </a>
         </li>
 
@@ -226,7 +230,7 @@
                 </svg>
               </span>
             </span>
-            <span class="circle__caption">Head Spa</span>
+            <span class="circle__caption" data-i18n="nav.headspa">Head Spa</span>
           </a>
         </li>
       </ul>
@@ -245,9 +249,9 @@
             decoding="async"
           />
         </figure>
-        <p class="about__eyebrow">La persona detrás de BYALEMDZ</p>
-        <h2 id="about-title" class="about__title">Acerca de mí</h2>
-        <p class="about__lead">
+        <p class="about__eyebrow" data-i18n="home.about_eyebrow">La persona detrás de BYALEMDZ</p>
+        <h2 id="about-title" class="about__title" data-i18n="home.about_title">Acerca de mí</h2>
+        <p class="about__lead" data-i18n="home.about_lead">
           María Alejandra Mendoza — Estilista Profesional, Tricóloga y Licenciada
           en Comunicación Social.
         </p>
@@ -276,11 +280,12 @@
           experiencia sea tan cómoda y personalizada como los resultados que
           obtengo.
         </p>
-        <a class="about__link" href="mi-historia.html">Conoce mi historia →</a>
+        <a class="about__link" href="mi-historia.html" data-i18n="home.about_link">Conoce mi historia →</a>
       </div>
     </section>
   </main>
 
   <script src="script.js" defer></script>
+  <script src="i18n.js" defer></script>
 </body>
 </html>

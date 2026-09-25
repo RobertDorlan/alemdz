@@ -83,6 +83,31 @@ img {
 
 .site-header__left {
   justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botón de idioma ES/EN */
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--color-medium-beige);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 5px 8px;
+  border-radius: 6px;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  border-color: var(--color-black);
+  color: var(--color-black);
 }
 
 .site-header__center {
@@ -454,19 +479,28 @@ img {
 
   /* Encabezado compacto: evita desbordamiento horizontal en pantallas pequeñas */
   .site-header__inner {
-    padding: 0 14px;
-    gap: 8px;
+    padding: 0 12px;
+    gap: 6px;
+  }
+
+  .site-header__left {
+    gap: 5px;
   }
 
   .brand {
-    font-size: 1.5rem;
-    letter-spacing: 0.28em;
-    padding-left: 0.28em;
+    font-size: 1.3rem;
+    letter-spacing: 0.18em;
+    padding-left: 0.18em;
+  }
+
+  .lang-toggle {
+    font-size: 0.66rem;
+    padding: 4px 6px;
   }
 
   .social-link {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
   }
 
   .site-header__right {

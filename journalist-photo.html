@@ -17,14 +17,15 @@
   <header class="site-header">
     <div class="site-header__inner">
       <div class="site-header__left">
-        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-i18n-attr="aria-label:chrome.menu" aria-expanded="false" aria-controls="site-nav">
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
         </button>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">EN</button>
       </div>
       <div class="site-header__center">
-        <a class="brand" href="index.html" aria-label="BYALEMDZ — Ir a la página de inicio">BYALEMDZ</a>
+        <a class="brand" href="index.html" aria-label="BYALEMDZ — Ir a la página de inicio" data-i18n-attr="aria-label:chrome.home_aria">BYALEMDZ</a>
       </div>
       <div class="site-header__right">
         <a class="social-link" href="https://www.instagram.com/alemdz.hair?stkn=bTZ5Z2w0bnZrOXRu" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -48,20 +49,20 @@
     </div>
     <nav id="site-nav" class="site-nav" aria-label="Navegación principal" hidden>
       <ul class="site-nav__list">
-        <li><a href="mi-historia.html">Mi historia</a></li>
-        <li><a href="journalist-photo.html">Journalist &amp; Photo</a></li>
-        <li><a href="tips-de-belleza.html">Belleza &amp; Tips</a></li>
-        <li><a href="tricologia.html">Tricología</a></li>
-        <li><a href="servicios-y-precios.html">Hair &amp; Services</a></li>
-        <li><a href="head-spa.html">Head Spa</a></li>
+        <li><a href="mi-historia.html" data-i18n="nav.mihistoria">Mi historia</a></li>
+        <li><a href="journalist-photo.html" data-i18n="nav.journalist">Journalist &amp; Photo</a></li>
+        <li><a href="tips-de-belleza.html" data-i18n="nav.belleza">Belleza &amp; Tips</a></li>
+        <li><a href="tricologia.html" data-i18n="nav.tricologia">Tricología</a></li>
+        <li><a href="servicios-y-precios.html" data-i18n="nav.hair">Hair &amp; Services</a></li>
+        <li><a href="head-spa.html" data-i18n="nav.headspa">Head Spa</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <article class="page">
-      <p class="page__eyebrow">Periodismo y fotografía</p>
-      <h1 class="page__title">Journalist &amp; Photo</h1>
+      <p class="page__eyebrow" data-i18n="jour.eyebrow">Periodismo y fotografía</p>
+      <h1 class="page__title" data-i18n="jour.title">Journalist &amp; Photo</h1>
       <p class="page__lead">
         (Texto de ejemplo) Mi formación como comunicadora social y mi pasión por la
         fotografía se unen para contar historias con una mirada editorial.
@@ -76,10 +77,11 @@
           Reemplaza este texto por tu contenido real cuando quieras.
         </p>
       </div>
-      <a class="page__back" href="index.html">← Volver al inicio</a>
+      <a class="page__back" href="index.html" data-i18n="chrome.back">← Volver al inicio</a>
     </article>
   </main>
 
   <script src="script.js" defer></script>
+  <script src="i18n.js" defer></script>
 </body>
 </html>
