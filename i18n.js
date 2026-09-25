@@ -276,8 +276,8 @@
       "(Sample text) Book your appointment easily. Soon you'll be able to choose service, date and time directly from here.",
     "(Ejemplo) Este espacio integrará el sistema de reservas. Por ahora, puedes escribir para agendar tu cita.":
       "(Sample) This space will integrate the booking system. For now, you can message to schedule your appointment.",
-    "(Ejemplo) Contacto provisional: escribe por Instagram o al correo que añadas aquí para reservar tu cita.":
-      "(Sample) Temporary contact: message via Instagram or the email you add here to book your appointment.",
+    "(Ejemplo) Contacto provisional: escríbenos por WhatsApp para reservar tu cita.":
+      "(Sample) Temporary contact: message us on WhatsApp to book your appointment.",
 
     "(Texto de ejemplo) Consejos prácticos para cuidar tu cabello y realzar tu belleza natural, explicados de forma sencilla y profesional.":
       "(Sample text) Practical tips to care for your hair and enhance your natural beauty, explained in a simple and professional way.",
