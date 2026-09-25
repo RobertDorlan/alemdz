@@ -609,6 +609,68 @@ img {
   color: var(--color-ink);
 }
 
+/* Tarjetas de servicio (pictograma + descripción) */
+.services {
+  display: grid;
+  gap: 18px;
+  margin: 8px 0;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 22px 24px;
+  background: var(--color-light-beige);
+  border: 1px solid var(--color-medium-beige);
+  border-radius: 10px;
+}
+
+.service-card__icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-warm-white);
+  border: 1px solid var(--color-soft-pink);
+  color: var(--color-ink);
+}
+
+.service-card__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.service-card h3 {
+  margin: 2px 0 8px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  color: var(--color-ink);
+}
+
+.service-card p {
+  margin: 0 0 10px;
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+}
+
+.service-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 560px) {
+  .service-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px;
+  }
+}
+
 /* Nota destacada (caja beige con borde rosado suave) */
 .page__note {
   margin-top: 32px;
