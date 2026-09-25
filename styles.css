@@ -728,6 +728,30 @@ img {
   margin-top: 56px;
 }
 
+/* En Hair & Services: tarifas primero, luego la descripción de servicios */
+.page__body--reorder {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__body--reorder .pricing {
+  order: 1;
+  margin-top: 8px;
+}
+
+.page__body--reorder .page__lead--services {
+  order: 2;
+  margin-top: 56px;
+}
+
+.page__body--reorder .services {
+  order: 3;
+}
+
+.page__body--reorder > p:last-child {
+  order: 4;
+}
+
 .pricing__title {
   margin: 0 0 6px;
   text-align: center;
