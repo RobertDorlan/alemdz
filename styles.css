@@ -66,8 +66,8 @@ img {
 .site-header {
   position: relative;
   z-index: 20;
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-line);
+  background: var(--color-ink);
+  border-bottom: 1px solid rgba(252, 250, 247, 0.12);
 }
 
 .site-header__inner {
@@ -91,8 +91,8 @@ img {
 /* Botón de idioma ES/EN */
 .lang-toggle {
   background: transparent;
-  border: 1px solid var(--color-medium-beige);
-  color: var(--color-ink);
+  border: 1px solid rgba(252, 250, 247, 0.3);
+  color: var(--color-warm-white);
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 0.72rem;
@@ -101,13 +101,14 @@ img {
   border-radius: 6px;
   line-height: 1;
   cursor: pointer;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease;
 }
 
 .lang-toggle:hover,
 .lang-toggle:focus-visible {
-  border-color: var(--color-black);
-  color: var(--color-black);
+  border-color: var(--color-warm-white);
+  color: var(--color-ink);
+  background: var(--color-warm-white);
 }
 
 .site-header__center {
@@ -131,7 +132,7 @@ img {
   /* Compensa el letter-spacing para mantener el centrado óptico */
   padding-left: 0.42em;
   line-height: 1;
-  color: var(--color-ink);
+  color: var(--color-warm-white);
   transition: opacity 0.3s ease;
 }
 
@@ -152,7 +153,7 @@ img {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--color-ink);
+  color: var(--color-warm-white);
 }
 
 .menu-toggle__bar {
@@ -180,19 +181,19 @@ img {
   justify-content: center;
   width: 34px;
   height: 34px;
-  color: var(--color-muted);
+  color: rgba(252, 250, 247, 0.7);
   transition: color 0.3s ease;
 }
 
 .social-link:hover,
 .social-link:focus-visible {
-  color: var(--color-ink);
+  color: var(--color-warm-white);
 }
 
 /* Menú desplegable */
 .site-nav {
-  border-top: 1px solid var(--color-line);
-  background: var(--color-bg);
+  border-top: 1px solid rgba(252, 250, 247, 0.12);
+  background: var(--color-ink);
 }
 
 .site-nav__list {
@@ -211,7 +212,7 @@ img {
   font-size: 0.95rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: rgba(252, 250, 247, 0.78);
   transition: color 0.3s ease;
 }
 
