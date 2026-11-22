@@ -1198,3 +1198,39 @@ img {
   color: var(--color-warm-white);
   border-color: var(--color-black);
 }
+
+/* ============================================================= */
+/*  ENCABEZADO EDITORIAL — REDISEÑO 2026                         */
+/* ============================================================= */
+.site-header{position:relative;z-index:30;background:var(--color-warm-white);color:var(--color-ink);border-bottom:1px solid var(--color-medium-beige);box-shadow:0 6px 22px rgba(28,26,25,.05)}
+.announcement-bar{background:var(--color-muted-pink);color:var(--color-ink);border-bottom:1px solid rgba(28,26,25,.08)}
+.announcement-bar__inner{min-height:40px;max-width:1400px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.announcement-bar__message{margin:0;font-family:var(--font-body);font-size:.74rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase}
+.announcement-bar__tools,.announcement-bar__social{display:inline-flex;align-items:center}
+.announcement-bar__tools{gap:14px}
+.announcement-bar__social{gap:2px;padding-right:12px;border-right:1px solid rgba(28,26,25,.18)}
+.announcement-bar .social-link{width:28px;height:28px;color:rgba(28,26,25,.66)}
+.announcement-bar .social-link:hover,.announcement-bar .social-link:focus-visible{color:var(--color-black)}
+.announcement-bar .lang-toggle{border-color:rgba(28,26,25,.28);color:var(--color-ink);min-width:36px}
+.announcement-bar .lang-toggle:hover,.announcement-bar .lang-toggle:focus-visible{border-color:var(--color-black);background:var(--color-black);color:var(--color-warm-white)}
+.announcement-bar__booking{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;transition:opacity .3s ease}
+.announcement-bar__booking:hover,.announcement-bar__booking:focus-visible{opacity:.58}
+.site-header__inner{min-height:94px;max-width:1400px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:minmax(180px,250px) minmax(0,1fr) auto;align-items:center;gap:clamp(22px,3vw,48px)}
+.site-header__center{justify-self:start}
+.brand{display:inline-flex;flex-direction:column;align-items:flex-start;color:var(--color-ink);padding-left:0;line-height:1}
+.brand__name{font-family:var(--font-display);font-size:clamp(1.75rem,2.4vw,2.35rem);font-weight:400;letter-spacing:.2em;padding-left:.2em;white-space:nowrap}
+.brand__tagline{margin-top:8px;font-family:var(--font-body);font-size:.58rem;font-weight:400;letter-spacing:.34em;text-transform:uppercase;color:var(--color-dark-gray);padding-left:.34em;white-space:nowrap}
+.site-header .site-nav{position:static;display:block;background:transparent;border:0;min-width:0}
+.site-header .site-nav__list{max-width:none;margin:0;padding:0;display:flex;flex-wrap:nowrap;align-items:center;justify-content:center;gap:clamp(18px,2.1vw,38px)}
+.site-header .site-nav__list a{position:relative;padding:12px 0;color:var(--color-dark-gray);font-size:clamp(.68rem,.72vw,.78rem);font-weight:400;letter-spacing:.12em;line-height:1.2;white-space:nowrap}
+.site-header .site-nav__list a::after{content:"";position:absolute;left:0;right:100%;bottom:6px;height:1px;background:var(--color-muted-pink);transition:right .3s ease}
+.site-header .site-nav__list a:hover,.site-header .site-nav__list a:focus-visible,.site-header .site-nav__list a[aria-current="page"]{color:var(--color-ink)}
+.site-header .site-nav__list a:hover::after,.site-header .site-nav__list a:focus-visible::after,.site-header .site-nav__list a[aria-current="page"]::after{right:0}
+.site-header__right{justify-self:end;display:inline-flex;align-items:center}
+.header-booking{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;background:var(--color-muted-pink);border:1px solid var(--color-muted-pink);color:var(--color-ink);font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;transition:background .3s ease,color .3s ease,border-color .3s ease}
+.header-booking:hover,.header-booking:focus-visible{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-warm-white)}
+.site-header .menu-toggle{display:none;color:var(--color-ink)}
+@media(max-width:1180px){.site-header__inner{grid-template-columns:minmax(160px,210px) minmax(0,1fr) auto;gap:20px;padding:0 28px}.site-header .site-nav__list{gap:18px}.site-header .site-nav__list a{font-size:.66rem;letter-spacing:.08em}.header-booking{padding-inline:16px}}
+@media(max-width:960px){.announcement-bar__inner{padding:0 24px}.site-header__inner{position:relative;min-height:76px;grid-template-columns:1fr auto;padding:0 24px}.site-header .menu-toggle{display:inline-flex;margin-left:10px}.site-header .site-nav{position:absolute;top:100%;left:0;right:0;display:none;background:var(--color-ink);border-top:1px solid rgba(252,250,247,.12);box-shadow:0 18px 30px rgba(28,26,25,.16)}.site-header .site-nav.site-nav--open{display:block}.site-header .site-nav__list{padding:18px 24px 22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 24px}.site-header .site-nav__list a{display:block;padding:12px 4px;color:rgba(252,250,247,.82);font-size:.76rem;letter-spacing:.12em}.site-header .site-nav__list a::after{bottom:8px;background:var(--color-muted-pink)}.site-header .site-nav__list a:hover,.site-header .site-nav__list a:focus-visible,.site-header .site-nav__list a[aria-current="page"]{color:var(--color-warm-white)}}
+@media(max-width:640px){.announcement-bar__inner{min-height:36px;padding:0 14px}.announcement-bar__message{display:none}.announcement-bar__tools{width:100%;justify-content:space-between;gap:10px}.announcement-bar__social{border-right:0;padding-right:0}.announcement-bar__booking{margin-left:auto;font-size:.7rem}.site-header__inner{min-height:70px;padding:0 14px}.brand__name{font-size:1.48rem;letter-spacing:.16em;padding-left:.16em}.brand__tagline{margin-top:6px;font-size:.5rem;letter-spacing:.24em;padding-left:.24em}.header-booking{display:none}.site-header .site-nav__list{grid-template-columns:1fr;padding:14px 18px 18px}}
+
