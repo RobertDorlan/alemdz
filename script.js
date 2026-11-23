@@ -2,6 +2,8 @@
 (function () {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.getElementById('site-nav');
+  const isHome = document.body.classList.contains('home-page');
+  const desktopNav = window.matchMedia('(min-width: 961px)');
 
   if (!toggle || !nav) return;
 
@@ -15,6 +17,20 @@
     const open = toggle.getAttribute('aria-expanded') === 'true';
     setOpen(!open);
   });
+
+  if (isHome) {
+    function syncHomeNavigation(event) {
+      if (event.matches) {
+        nav.hidden = false;
+        toggle.setAttribute('aria-expanded', 'false');
+      } else {
+        setOpen(false);
+      }
+    }
+
+    syncHomeNavigation(desktopNav);
+    desktopNav.addEventListener('change', syncHomeNavigation);
+  }
 
   // Cerrar con la tecla Escape.
   document.addEventListener('keydown', function (event) {
