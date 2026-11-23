@@ -1356,7 +1356,7 @@ img {
   padding: 12px 24px;
   background: var(--color-black);
   border: 1px solid var(--color-black);
-  color: var(--color-muted-pink);
+  color: #f1e6e4;
   font-size: 0.76rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -1373,7 +1373,7 @@ img {
 }
 
 .editorial-hero {
-  height: min(840px, calc(100vh - 112px));
+  height: min(855px, calc(100vh - 112px));
   min-height: 0;
   display: grid;
   grid-template-columns: minmax(0, 46%) minmax(0, 54%);
