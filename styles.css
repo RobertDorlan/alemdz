@@ -1376,14 +1376,17 @@ img {
 }
 
 .editorial-hero {
-  min-height: min(576px, calc(100vh - 112px));
+  height: min(576px, calc(100vh - 112px));
+  min-height: 0;
   display: grid;
   grid-template-columns: minmax(0, 46%) minmax(0, 54%);
   background: var(--color-soft-pink);
+  overflow: hidden;
 }
 
 .editorial-hero__content {
-  padding: clamp(44px, 4vw, 68px) clamp(34px, 7vw, 118px) clamp(72px, 6vw, 110px);
+  min-height: 0;
+  padding: clamp(38px, 3.5vw, 56px) clamp(30px, 6vw, 96px) clamp(56px, 5vw, 84px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1394,7 +1397,7 @@ img {
   max-width: 620px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(4rem, 7vw, 7.2rem);
+  font-size: clamp(3.6rem, 6vw, 6.2rem);
   font-weight: 300;
   letter-spacing: -0.035em;
   line-height: 0.88;
@@ -1406,21 +1409,21 @@ img {
   display: block;
   width: 66px;
   height: 1px;
-  margin-top: 32px;
+  margin-top: 26px;
   background: var(--color-muted-pink);
 }
 
 .editorial-hero__lead {
   max-width: 520px;
-  margin: 30px 0 0;
+  margin: 24px 0 0;
   color: var(--color-dark-gray);
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 1.65vw, 1.65rem);
-  line-height: 1.45;
+  font-size: clamp(1.15rem, 1.45vw, 1.5rem);
+  line-height: 1.42;
 }
 
 .editorial-hero__actions {
-  margin-top: 34px;
+  margin-top: 28px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -1445,6 +1448,8 @@ img {
 
 .editorial-hero__photo {
   min-width: 0;
+  min-height: 0;
+  height: 100%;
   margin: 0;
   background: #070707;
   display: flex;
@@ -1613,8 +1618,10 @@ img {
   }
 
   .editorial-hero {
+    height: auto;
     min-height: 0;
     grid-template-columns: 1fr;
+    overflow: visible;
   }
 
   .editorial-hero__content {
@@ -1623,7 +1630,8 @@ img {
   }
 
   .editorial-hero__photo {
-    min-height: 544px;
+    height: 544px;
+    min-height: 0;
   }
 
   .home-page .circles__grid {
@@ -1685,7 +1693,8 @@ img {
   }
 
   .editorial-hero__photo {
-    min-height: 448px;
+    height: 448px;
+    min-height: 0;
   }
 
   .home-page .studio-hero {
