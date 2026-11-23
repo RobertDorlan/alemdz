@@ -1373,7 +1373,7 @@ img {
 }
 
 .editorial-hero {
-  height: min(620px, calc(100vh - 112px));
+  height: min(840px, calc(100vh - 112px));
   min-height: 0;
   display: grid;
   grid-template-columns: minmax(0, 46%) minmax(0, 54%);
