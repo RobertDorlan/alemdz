@@ -17,7 +17,7 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="styles.css?v=20261123-2" />
+  <link rel="stylesheet" href="styles.css?v=20261123-3" />
 </head>
 <body class="home-page">
   <!-- ============================================================= -->
@@ -72,21 +72,9 @@
       </figure>
     </section>
 
-    <!-- ============================================================= -->
-    <!-- 3. MENÚ VISUAL CON CÍRCULOS                                   -->
-    <!-- Cinco accesos circulares. Orden fijo. Toda la superficie es   -->
-    <!-- clicable. Hover discreto y estados de foco visibles.          -->
-    <!--                                                               -->
-    <!-- Imágenes/texturas de cada círculo (sustituir por reales):     -->
-    <!--   public/images/circles/mi-historia.jpg                       -->
-    <!--   public/images/circles/tips-de-belleza.jpg                   -->
-    <!--   public/images/circles/tricologia.jpg                        -->
-    <!--   public/images/circles/servicios-y-precios.jpg               -->
-    <!--   public/images/circles/bookings.jpg                          -->
-    <!-- ============================================================= -->
     <section class="circles" aria-labelledby="circles-title">
       <p class="circles__eyebrow" data-i18n="home.explore_eyebrow">Descubre</p>
-      <h2 id="circles-title" class="circles__title" data-i18n="home.explore">Explora mi mundo</h2>
+      <h2 id="circles-title" class="circles__title" data-i18n="home.explore_new">Una experiencia pensada para ti</h2>
       <p class="circles__subtitle" data-i18n="home.explore_sub">
         Elige un área para conocer más sobre mi trabajo y mis servicios.
       </p>
@@ -103,6 +91,8 @@
               </span>
             </span>
             <span class="circle__caption" data-i18n="nav.mihistoria">Mi historia</span>
+            <span class="circle__description" data-i18n="home.card_story">Trayectoria, pasión y evolución profesional.</span>
+            <span class="circle__action" data-i18n="home.discover">Descubrir</span>
           </a>
         </li>
 
@@ -119,6 +109,8 @@
               </span>
             </span>
             <span class="circle__caption" data-i18n="nav.hair">Hair &amp; Services</span>
+            <span class="circle__description" data-i18n="home.card_services">Corte, colorimetría, alisados y cuidado experto.</span>
+            <span class="circle__action" data-i18n="home.discover">Descubrir</span>
           </a>
         </li>
 
@@ -133,6 +125,8 @@
               </span>
             </span>
             <span class="circle__caption" data-i18n="nav.journalist">Journalist &amp; Photo</span>
+            <span class="circle__description" data-i18n="home.card_journalist">Comunicación, imagen y mirada profesional.</span>
+            <span class="circle__action" data-i18n="home.discover">Descubrir</span>
           </a>
         </li>
 
@@ -147,6 +141,8 @@
               </span>
             </span>
             <span class="circle__caption" data-i18n="nav.belleza">Belleza &amp; Tips</span>
+            <span class="circle__description" data-i18n="home.card_beauty">Consejos para cuidar tu cabello cada día.</span>
+            <span class="circle__action" data-i18n="home.discover">Descubrir</span>
           </a>
         </li>
 
@@ -162,6 +158,8 @@
               </span>
             </span>
             <span class="circle__caption" data-i18n="nav.tricologia">Tricología</span>
+            <span class="circle__description" data-i18n="home.card_trichology">Salud del cuero cabelludo y prevención.</span>
+            <span class="circle__action" data-i18n="home.discover">Descubrir</span>
           </a>
         </li>
 
@@ -176,14 +174,45 @@
               </span>
             </span>
             <span class="circle__caption" data-i18n="nav.headspa">Head Spa</span>
+            <span class="circle__description" data-i18n="home.card_headspa">Bienestar, relajación y cuidado capilar.</span>
+            <span class="circle__action" data-i18n="home.discover">Descubrir</span>
           </a>
         </li>
       </ul>
     </section>
 
-    <!-- ============================================================= -->
-    <!-- 4. ACERCA DE MÍ                                               -->
-    <!-- ============================================================= -->
+    <section class="signature-care" aria-labelledby="care-title">
+      <div class="signature-care__intro">
+        <p class="section-eyebrow" data-i18n="home.care_eyebrow">Mi forma de cuidar</p>
+        <h2 id="care-title" data-i18n="home.care_title">La belleza empieza desde la raíz.</h2>
+        <p data-i18n="home.care_intro">Cada servicio combina técnica, salud capilar y una atención cercana para crear resultados personalizados sin comprometer la fibra ni el cuero cabelludo.</p>
+        <a class="text-link text-link--light" href="tricologia.html" data-i18n="home.care_link">Conoce mi enfoque</a>
+      </div>
+      <div class="signature-care__pillars">
+        <article>
+          <span>AM</span>
+          <div>
+            <h3 data-i18n="home.pillar_protocol">Protocolo propio</h3>
+            <p data-i18n="home.pillar_protocol_text">Cuidado especial para alisados, pensado para proteger la integridad del cabello.</p>
+          </div>
+        </article>
+        <article>
+          <span>TC</span>
+          <div>
+            <h3 data-i18n="home.pillar_health">Salud capilar</h3>
+            <p data-i18n="home.pillar_health_text">La tricología guía cada decisión para cuidar el cuero cabelludo y prevenir afecciones.</p>
+          </div>
+        </article>
+        <article>
+          <span>1:1</span>
+          <div>
+            <h3 data-i18n="home.pillar_personal">Atención personalizada</h3>
+            <p data-i18n="home.pillar_personal_text">Escucha, comunicación profesional y un plan adaptado a cada persona.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="about about--story" aria-label="Trayectoria profesional de Alejandra Mendoza">
       <div class="about__inner">
         <p class="about__text">
@@ -213,12 +242,26 @@
         </p>
       </div>
     </section>
+
+    <section class="booking-cta" aria-labelledby="booking-title">
+      <p class="section-eyebrow" data-i18n="home.booking_eyebrow">Tu próxima experiencia</p>
+      <h2 id="booking-title" data-i18n="home.booking_title">Tu cabello merece una atención completamente personalizada.</h2>
+      <p data-i18n="home.booking_text">Conversemos sobre lo que tu cabello necesita y encontremos el servicio adecuado para ti.</p>
+      <a class="booking-cta__button" href="bookings.html" data-i18n="serv.cta">Reservar cita</a>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p class="site-footer__brand">BYALEMDZ</p>
       <p class="site-footer__tagline" data-i18n="footer.tagline">Hair Professional · Tricología · Head Spa</p>
+      <nav class="site-footer__nav" aria-label="Navegación del pie de página">
+        <a href="mi-historia.html" data-i18n="nav.mihistoria">Mi historia</a>
+        <a href="servicios-y-precios.html" data-i18n="nav.hair">Hair &amp; Services</a>
+        <a href="tricologia.html" data-i18n="nav.tricologia">Tricología</a>
+        <a href="head-spa.html" data-i18n="nav.headspa">Head Spa</a>
+        <a href="bookings.html" data-i18n="serv.cta">Reservar cita</a>
+      </nav>
       <div class="site-footer__social">
         <a href="https://www.instagram.com/byalemdz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
@@ -242,7 +285,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20261123-1" defer></script>
-  <script src="i18n.js?v=20261123-1" defer></script>
+  <script src="script.js?v=20261123-2" defer></script>
+  <script src="i18n.js?v=20261123-2" defer></script>
 </body>
 </html>
