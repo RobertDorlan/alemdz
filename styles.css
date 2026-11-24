@@ -2543,6 +2543,31 @@ button:focus-visible {
   border-color: var(--color-warm-white);
 }
 
+.head-spa-promo__status {
+  min-height: 52px;
+  margin-top: 34px;
+  padding: 14px 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-soft-pink);
+  border: 1px solid rgba(229, 205, 202, 0.72);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.head-spa-promo__status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-right: 12px;
+  background: var(--color-soft-pink);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(229, 205, 202, 0.1);
+}
+
 /* Tarjetas: mejor jerarquía, descripción más cómoda e iconos consistentes. */
 .home-page .circle-link {
   min-height: 340px;
@@ -2899,7 +2924,8 @@ button:focus-visible {
     font-size: 0.78rem;
   }
 
-  .head-spa-promo__cta {
+  .head-spa-promo__cta,
+  .head-spa-promo__status {
     width: 100%;
   }
 
