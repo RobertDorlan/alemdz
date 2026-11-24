@@ -27,7 +27,7 @@
     "home.intro_cta": "Book an appointment",
     "home.explore_eyebrow": "Discover",
     "home.explore_sub": "Choose an area to learn more about my work and services.",
-    "home.about_eyebrow": "THE PERSON BEHIND ALE MENDOZA",
+    "home.about_eyebrow": "THE PERSON BEHIND ByAlemdz",
     "home.about_title": "About me",
     "home.about_lead":
       "María Alejandra Mendoza — Professional Stylist, Trichologist and Bachelor in Social Communication.",
