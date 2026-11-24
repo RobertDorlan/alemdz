@@ -27,11 +27,11 @@
     "home.intro_cta": "Book an appointment",
     "home.explore_eyebrow": "Discover",
     "home.explore_sub": "Choose an area to learn more about my work and services.",
-    "home.about_eyebrow": "Hair Professional · Trichology · Head Spa",
-    "home.about_title": "Real beauty. Healthy hair.",
+    "home.about_eyebrow": "The person behind BYALEMDZ",
+    "home.about_title": "About me",
     "home.about_lead":
-      "I am María Alejandra Mendoza, a professional stylist and trichologist. I create personalized experiences that care for beauty, the hair fiber and the scalp.",
-    "home.about_link": "Read my story",
+      "María Alejandra Mendoza — Professional Stylist, Trichologist and Bachelor in Social Communication.",
+    "home.about_link": "Read my story →",
     "home.trust_experience": "of professional experience",
     "home.trust_protocol": "signature hair-care protocol",
     "home.trust_personal": "completely personalized attention",
@@ -410,13 +410,16 @@
 
   function translateNode(node) {
     var key = node.getAttribute("data-i18n");
+    var preserveMarkup = node.hasAttribute("data-i18n-html");
     if (!node.hasAttribute("data-i18n-es")) {
-      node.setAttribute("data-i18n-es", node.textContent);
+      node.setAttribute("data-i18n-es", preserveMarkup ? node.innerHTML : node.textContent);
     }
     if (current === "en" && en[key] != null) {
-      node.textContent = en[key];
+      if (preserveMarkup) node.innerHTML = en[key];
+      else node.textContent = en[key];
     } else {
-      node.textContent = node.getAttribute("data-i18n-es");
+      if (preserveMarkup) node.innerHTML = node.getAttribute("data-i18n-es");
+      else node.textContent = node.getAttribute("data-i18n-es");
     }
   }
 
