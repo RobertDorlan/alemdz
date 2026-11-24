@@ -32,6 +32,7 @@
     "home.about_lead":
       "María Alejandra Mendoza — Professional Stylist, Trichologist and Bachelor in Social Communication.",
     "home.about_link": "Read my story →",
+    "home.trust_years": "360°",
     "home.trust_experience": "beyond my chair",
     "home.trust_protocol": "signature hair-care protocol",
     "home.trust_personal": "completely personalized attention",
