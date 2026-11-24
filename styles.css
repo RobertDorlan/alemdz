@@ -590,6 +590,22 @@ img {
   color: rgba(252, 250, 247, 0.55);
 }
 
+.site-footer__details {
+  margin: 10px 0 0;
+  color: rgba(252, 250, 247, 0.8);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.site-footer__details span {
+  margin: 0 8px;
+  color: var(--color-muted-pink);
+}
+
+.site-footer__details a {
+  border-bottom: 1px solid rgba(231, 207, 204, 0.7);
+}
+
 /* ============================================================= */
 /*  RESPONSIVE                                                   */
 /* ============================================================= */
@@ -1322,6 +1338,15 @@ img {
   white-space: nowrap;
 }
 
+.site-nav a[aria-current="page"],
+.site-footer__nav a[aria-current="page"] {
+  color: var(--color-warm-white);
+}
+
+.site-nav a[aria-current="page"]::after {
+  right: 0;
+}
+
 .site-nav__list--home a::after {
   content: "";
   position: absolute;
@@ -2026,5 +2051,483 @@ img {
   .site-footer__nav {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* ============================================================= */
+/*  REFINAMIENTO PROFESIONAL — LEGIBILIDAD Y CONVERSIÓN          */
+/* ============================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 12px 18px;
+  background: var(--color-warm-white);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-muted-pink);
+  outline-offset: 4px;
+}
+
+/* Encabezado más legible sin perder el carácter editorial. */
+.home-page .brand--home small {
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: rgba(252, 250, 247, 0.86);
+}
+
+.site-nav__list--home a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: rgba(252, 250, 247, 0.92);
+  font-size: clamp(0.82rem, 0.86vw, 0.92rem);
+  font-weight: 500;
+  letter-spacing: 0.055em;
+}
+
+.header-social a,
+.site-footer__social a {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Hero: propuesta clara, texto más sólido y controles accesibles. */
+.editorial-hero .about__eyebrow,
+.circles__eyebrow,
+.section-eyebrow,
+.page__eyebrow {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+}
+
+.editorial-hero__title,
+.home-page .circles__title,
+.signature-care h2,
+.booking-cta h2,
+.page__title {
+  font-weight: 400;
+}
+
+.editorial-hero__title {
+  font-size: clamp(3.3rem, 5.35vw, 5.65rem);
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+}
+
+.editorial-hero__lead {
+  max-width: 560px;
+  font-size: clamp(1.25rem, 1.55vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.48;
+}
+
+.editorial-hero__primary,
+.booking-cta__button,
+.btn {
+  min-height: 52px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.085em;
+}
+
+.editorial-hero__link,
+.about__link,
+.text-link,
+.page__back {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.94rem;
+  font-weight: 500;
+  letter-spacing: 0.075em;
+}
+
+/* Datos reales que construyen confianza inmediatamente después del hero. */
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: var(--color-warm-white);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.trust-strip__item {
+  min-height: 150px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.trust-strip__item + .trust-strip__item {
+  border-left: 1px solid var(--color-line);
+}
+
+.trust-strip strong {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.trust-strip span {
+  margin-top: 10px;
+  color: var(--color-dark-gray);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Tarjetas: mejor jerarquía, descripción más cómoda e iconos consistentes. */
+.home-page .circle-link {
+  min-height: 340px;
+  border-color: rgba(220, 207, 194, 0.95);
+}
+
+.home-page .circle {
+  width: 80px;
+  height: 80px;
+}
+
+.home-page .circle__icon svg {
+  width: 38px;
+}
+
+.home-page .circle__caption {
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.circle__description {
+  max-width: 29ch;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.circle__action {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+}
+
+/* Sección oscura: conserva el lujo y gana contraste real. */
+.signature-care h2 {
+  font-size: clamp(3rem, 5vw, 5.35rem);
+}
+
+.signature-care__intro > p:not(.section-eyebrow),
+.signature-care__pillars p {
+  color: rgba(252, 250, 247, 0.86);
+  font-size: 1.06rem;
+  font-weight: 400;
+}
+
+.signature-care__pillars h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Historia resumida: mejor ritmo y una salida clara a la página completa. */
+.home-page .about--story {
+  text-align: center;
+}
+
+.about--story__heading {
+  max-width: 840px;
+  margin: 0 auto clamp(42px, 6vw, 70px);
+}
+
+.about--story__heading h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.home-page .about--story .about__text {
+  font-size: clamp(1.28rem, 1.65vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+.about--story__link {
+  min-height: 48px;
+  margin-top: 48px;
+  padding: 12px 0 7px;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.booking-cta > p:not(.section-eyebrow) {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Páginas interiores y precios: escala tipográfica y escaneabilidad. */
+.page {
+  max-width: 800px;
+}
+
+.page--wide {
+  max-width: 1120px;
+}
+
+.page__lead {
+  max-width: 68ch;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.page__body,
+.page__body p,
+.page__body li,
+.def-list dd,
+.service-card p,
+.spa-check li,
+.spa-tech li {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.page__body p,
+.page__body li {
+  max-width: 72ch;
+}
+
+.page__body h2 {
+  font-size: clamp(1.8rem, 3vw, 2.25rem);
+  line-height: 1.25;
+}
+
+.service-card {
+  border-radius: 0;
+  border-color: var(--color-line);
+  box-shadow: none;
+}
+
+.service-card h3,
+.price-card h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.price-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.price-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--color-muted-pink);
+}
+
+.pricing-filters {
+  margin: 30px auto 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pricing-filters button {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--color-line);
+  background: var(--color-warm-white);
+  color: var(--color-ink);
+  font: 500 0.875rem/1.2 var(--font-body);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.pricing-filters button[aria-pressed="true"],
+.pricing-filters button:hover {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-warm-white);
+}
+
+.price-card[hidden] {
+  display: none;
+}
+
+.price-card__note,
+.price-rows dt,
+.price-rows dd {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.price-rows dd {
+  font-weight: 600;
+}
+
+/* Pie coherente con la marca y suficientemente visible. */
+.site-footer__brand {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.site-footer__tagline,
+.site-footer__nav a {
+  color: rgba(252, 250, 247, 0.84);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.site-footer__copy {
+  color: rgba(252, 250, 247, 0.72);
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+.mobile-booking {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .site-header__inner--home {
+    grid-template-columns: 172px minmax(0, 1fr) auto;
+    gap: 18px;
+  }
+
+  .site-nav__list--home {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+  .site-nav__list--home a {
+    font-size: 0.9rem;
+  }
+
+  .editorial-hero__title {
+    font-size: clamp(3.6rem, 10vw, 5.4rem);
+  }
+}
+
+@media (max-width: 640px) {
+  body.home-page {
+    padding-bottom: 72px;
+  }
+
+  .home-page .brand--home small {
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+  }
+
+  .editorial-hero__content {
+    min-height: auto;
+    padding: 54px 24px 60px;
+  }
+
+  .editorial-hero__title {
+    font-size: clamp(3.15rem, 15vw, 4.5rem);
+    line-height: 0.98;
+  }
+
+  .editorial-hero__photo {
+    height: min(78vh, 560px);
+  }
+
+  .trust-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-strip__item {
+    min-height: 118px;
+  }
+
+  .trust-strip__item + .trust-strip__item {
+    border-left: 0;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .home-page .circles {
+    padding: 76px 20px;
+  }
+
+  .home-page .circles__title {
+    font-size: clamp(2.6rem, 13vw, 4rem);
+  }
+
+  .home-page .circle-link {
+    min-height: 292px;
+  }
+
+  .signature-care__intro,
+  .signature-care__pillars {
+    padding: 68px 24px;
+  }
+
+  .signature-care__pillars article {
+    grid-template-columns: 46px minmax(0, 1fr);
+  }
+
+  .home-page .about--story {
+    padding: 76px 24px;
+  }
+
+  .mobile-booking {
+    position: fixed;
+    left: 14px;
+    right: 14px;
+    bottom: 12px;
+    z-index: 60;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-black);
+    color: var(--color-soft-pink);
+    border: 1px solid rgba(243, 230, 228, 0.55);
+    box-shadow: 0 14px 38px rgba(28, 26, 25, 0.28);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
   }
 }
