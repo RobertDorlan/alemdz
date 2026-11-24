@@ -7,8 +7,8 @@
   var en = {
     // Encabezado / navegación (común a todas las páginas)
     "chrome.menu": "Open menu",
-    "chrome.home_aria": "BYALEMDZ — Go to homepage",
-    "chrome.back": "← Back to home",
+    "chrome.home_aria": "AM.BYALE — Go to homepage",
+    "chrome.back": "Back to home",
     "nav.mihistoria": "My story",
     "nav.journalist": "Journalist & Photo",
     "nav.belleza": "Beauty & Tips",
@@ -27,11 +27,17 @@
     "home.intro_cta": "Book an appointment",
     "home.explore_eyebrow": "Discover",
     "home.explore_sub": "Choose an area to learn more about my work and services.",
-    "home.about_eyebrow": "The person behind BYALEMDZ",
-    "home.about_title": "About me",
+    "home.about_eyebrow": "Hair Professional · Trichology · Head Spa",
+    "home.about_title": "Real beauty. Healthy hair.",
     "home.about_lead":
-      "María Alejandra Mendoza — Professional Stylist, Trichologist and Bachelor in Social Communication.",
-    "home.about_link": "Read my story →",
+      "I am María Alejandra Mendoza, a professional stylist and trichologist. I create personalized experiences that care for beauty, the hair fiber and the scalp.",
+    "home.about_link": "Read my story",
+    "home.trust_experience": "of professional experience",
+    "home.trust_protocol": "signature hair-care protocol",
+    "home.trust_personal": "completely personalized attention",
+    "home.story_eyebrow": "Professional journey",
+    "home.story_title": "Experience transformed into care.",
+    "home.story_link": "Explore my journey",
     "home.explore_new": "An experience designed for you",
     "home.card_story": "A journey of passion and professional growth.",
     "home.card_services": "Cutting, color, straightening and expert care.",
@@ -79,6 +85,8 @@
   var textMap = {
     "Con una trayectoria de 23 años en el mundo de la peluquería, inicié mi carrera a los 16 años y me he especializado en todas las áreas fundamentales del cuidado capilar. Soy experta en alisado, colorimetría y corte, con un profundo conocimiento de cómo respetar la fibra capilar y mantener tanto el cabello como el cuero cabelludo en perfecto estado de salud.":
       "With 23 years of experience in the world of hairdressing, I began my career at 16 and have specialized in all the fundamental areas of hair care. I am an expert in straightening, color and cutting, with a deep understanding of how to respect the hair fiber and keep both the hair and the scalp in perfect health.",
+    "Como tricóloga, priorizo la salud del cuero cabelludo y aplico mi protocolo de cuidado «AM» para proteger la integridad del cabello. Mi formación en Comunicación Social me permite acompañar cada servicio con una escucha profesional, cercana y completamente personalizada.":
+      "As a trichologist, I prioritize scalp health and apply my «AM» care protocol to protect the integrity of the hair. My background in Social Communication allows me to support every service with professional, attentive and completely personalized listening.",
     "Mi enfoque se basa en un protocolo de cuidado especial para alisados que llamo «AM», diseñado para proteger la integridad del cabello y evitar reacciones adversas. Además, domino todas las técnicas de colorimetría para lograr resultados personalizados que se adapten a cada persona.":
       "My approach is based on a special care protocol for straightening that I call «AM», designed to protect the integrity of the hair and prevent adverse reactions. In addition, I master every color technique to achieve personalized results tailored to each person.",
     "Como tricóloga, siempre priorizo la salud del cuero cabelludo para prevenir afecciones. Mi objetivo es crear belleza real y saludable, cuidando cada detalle: un cuero cabelludo sano y una fibra capilar sana.":
