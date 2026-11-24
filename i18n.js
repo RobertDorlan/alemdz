@@ -84,7 +84,7 @@
     "book.eyebrow": "Bookings",
     "book.title": "Bookings",
     "book.cta": "Book via WhatsApp",
-    "footer.tagline": "Journalist · Hair Professional · Trichology · Head Spa"
+    "footer.tagline": "Journalist · Hair Professional · Trichology"
   };
 
   // Traducciones por contenido (párrafos, títulos, listas…)

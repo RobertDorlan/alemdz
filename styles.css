@@ -1301,15 +1301,17 @@ img {
 }
 
 .home-page .brand--home__logo {
-  width: 76px;
-  height: 52px;
+  width: 66px;
+  height: 66px;
+  padding: 5px;
+  box-sizing: border-box;
   flex: 0 0 auto;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  border: 1px solid rgba(231, 207, 204, 0.48);
-  border-radius: 3px;
+  border: 1px solid rgba(231, 207, 204, 0.62);
+  border-radius: 50%;
   background: #c9b9a3;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
 
 .home-page .brand--home__text {
@@ -2847,9 +2849,9 @@ button:focus-visible {
   }
 
   .home-page .brand--home__logo {
-    width: 58px;
-    height: 40px;
-    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
   }
 
   .home-page .brand--home__text > span {
