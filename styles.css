@@ -1284,7 +1284,7 @@ img {
   min-height: 112px;
   padding: 0 clamp(24px, 4vw, 64px);
   display: grid;
-  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(290px, 340px) minmax(0, 1fr) auto;
   align-items: center;
   gap: clamp(18px, 3vw, 48px);
 }
@@ -1293,19 +1293,40 @@ img {
   padding: 0;
   color: var(--color-warm-white);
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
   letter-spacing: 0.2em;
   line-height: 1;
 }
 
-.home-page .brand--home span {
+.home-page .brand--home__logo {
+  width: 76px;
+  height: 52px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(231, 207, 204, 0.48);
+  border-radius: 3px;
+  background: #c9b9a3;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.home-page .brand--home__text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1;
+}
+
+.home-page .brand--home__text > span {
   font-size: clamp(1.7rem, 2.5vw, 2.45rem);
   text-transform: none;
 }
 
-.home-page .brand--home small {
+.home-page .brand--home__text > small {
   font-family: var(--font-body);
   font-size: 0.63rem;
   font-weight: 400;
@@ -1770,7 +1791,7 @@ img {
 
 @media (max-width: 1220px) {
   .site-header__inner--home {
-    grid-template-columns: 180px minmax(0, 1fr) auto;
+    grid-template-columns: 275px minmax(0, 1fr) auto;
   }
 
   .site-nav__list--home {
@@ -1889,11 +1910,11 @@ img {
     padding: 0 18px;
   }
 
-  .home-page .brand--home span {
+  .home-page .brand--home__text > span {
     font-size: 1.45rem;
   }
 
-  .home-page .brand--home small {
+  .home-page .brand--home__text > small {
     font-size: 0.52rem;
   }
 
@@ -2305,7 +2326,7 @@ button:focus-visible {
 }
 
 /* Encabezado más legible sin perder el carácter editorial. */
-.home-page .brand--home small {
+.home-page .brand--home__text > small {
   font-size: 0.76rem;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -2417,6 +2438,109 @@ button:focus-visible {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* Head Spa: pieza editorial destacada antes del catálogo de servicios. */
+.head-spa-promo {
+  min-height: 640px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(400px, 0.88fr);
+  background: var(--color-black);
+  color: var(--color-warm-white);
+  border-bottom: 1px solid rgba(252, 250, 247, 0.12);
+}
+
+.head-spa-promo__media {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-light-beige);
+}
+
+.head-spa-promo__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.head-spa-promo__content {
+  padding: clamp(64px, 7vw, 112px) clamp(44px, 6vw, 96px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.head-spa-promo__eyebrow {
+  margin: 0 0 24px;
+  color: var(--color-muted-pink);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.head-spa-promo h2 {
+  max-width: 620px;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 4.5vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+
+.head-spa-promo h2::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 1px;
+  margin-top: 30px;
+  background: var(--color-muted-pink);
+}
+
+.head-spa-promo__text {
+  max-width: 590px;
+  margin: 28px 0 0;
+  color: rgba(252, 250, 247, 0.84);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.head-spa-promo__details {
+  margin: 28px 0 0;
+  color: var(--color-muted-pink);
+  font-size: 0.84rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.head-spa-promo__cta {
+  min-height: 52px;
+  margin-top: 34px;
+  padding: 14px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-soft-pink);
+  color: var(--color-black);
+  border: 1px solid var(--color-soft-pink);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.head-spa-promo__cta:hover,
+.head-spa-promo__cta:focus-visible {
+  background: var(--color-warm-white);
+  border-color: var(--color-warm-white);
 }
 
 /* Tarjetas: mejor jerarquía, descripción más cómoda e iconos consistentes. */
@@ -2644,7 +2768,7 @@ button:focus-visible {
 
 @media (max-width: 1100px) {
   .site-header__inner--home {
-    grid-template-columns: 172px minmax(0, 1fr) auto;
+    grid-template-columns: 260px minmax(0, 1fr) auto;
     gap: 18px;
   }
 
@@ -2654,6 +2778,10 @@ button:focus-visible {
 }
 
 @media (max-width: 960px) {
+  .site-header__inner--home {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
   .site-nav__list--home a {
     font-size: 0.9rem;
   }
@@ -2665,6 +2793,18 @@ button:focus-visible {
   .editorial-hero__brandmark {
     width: clamp(230px, 32vw, 280px);
   }
+
+  .head-spa-promo {
+    grid-template-columns: 1fr;
+  }
+
+  .head-spa-promo__media {
+    aspect-ratio: 1290 / 900;
+  }
+
+  .head-spa-promo__content {
+    padding: 72px clamp(32px, 8vw, 72px) 80px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2672,9 +2812,23 @@ button:focus-visible {
     padding-bottom: 72px;
   }
 
-  .home-page .brand--home small {
+  .home-page .brand--home__text > small {
     font-size: 0.68rem;
     letter-spacing: 0.16em;
+  }
+
+  .home-page .brand--home {
+    gap: 10px;
+  }
+
+  .home-page .brand--home__logo {
+    width: 58px;
+    height: 40px;
+    border-radius: 2px;
+  }
+
+  .home-page .brand--home__text > span {
+    font-size: 1.32rem;
   }
 
   .editorial-hero__content {
@@ -2718,6 +2872,35 @@ button:focus-visible {
   .trust-strip__item + .trust-strip__item {
     border-left: 0;
     border-top: 1px solid var(--color-line);
+  }
+
+  .head-spa-promo {
+    min-height: 0;
+  }
+
+  .head-spa-promo__media {
+    aspect-ratio: 1 / 1;
+  }
+
+  .head-spa-promo__content {
+    padding: 60px 24px 68px;
+  }
+
+  .head-spa-promo h2 {
+    font-size: clamp(2.75rem, 13vw, 4rem);
+  }
+
+  .head-spa-promo__text {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .head-spa-promo__details {
+    font-size: 0.78rem;
+  }
+
+  .head-spa-promo__cta {
+    width: 100%;
   }
 
   .home-page .circles {
