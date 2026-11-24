@@ -27,12 +27,12 @@
     "home.intro_cta": "Book an appointment",
     "home.explore_eyebrow": "Discover",
     "home.explore_sub": "Choose an area to learn more about my work and services.",
-    "home.about_eyebrow": "The person behind BYALEMDZ",
+    "home.about_eyebrow": "THE PERSON BEHIND ALE MENDOZA",
     "home.about_title": "About me",
     "home.about_lead":
       "María Alejandra Mendoza — Professional Stylist, Trichologist and Bachelor in Social Communication.",
     "home.about_link": "Read my story →",
-    "home.trust_experience": "of professional experience",
+    "home.trust_experience": "beyond my chair",
     "home.trust_protocol": "signature hair-care protocol",
     "home.trust_personal": "completely personalized attention",
     "home.story_eyebrow": "Professional journey",
@@ -78,7 +78,7 @@
     "book.eyebrow": "Bookings",
     "book.title": "Bookings",
     "book.cta": "Book via WhatsApp",
-    "footer.tagline": "Hair Professional · Trichology · Head Spa"
+    "footer.tagline": "Journalist · Hair Professional · Trichology · Head Spa"
   };
 
   // Traducciones por contenido (párrafos, títulos, listas…)

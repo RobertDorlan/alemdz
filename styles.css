@@ -1310,7 +1310,7 @@ img {
   font-size: 0.63rem;
   font-weight: 400;
   letter-spacing: 0.28em;
-  text-transform: uppercase;
+  text-transform: none;
   color: rgba(252, 250, 247, 0.64);
 }
 
@@ -2408,6 +2408,12 @@ button:focus-visible {
   font-size: clamp(2rem, 3vw, 2.7rem);
   font-weight: 500;
   line-height: 1;
+}
+
+.trust-strip .trust-strip__phrase {
+  max-width: 260px;
+  font-size: clamp(1.65rem, 2.25vw, 2.2rem);
+  line-height: 1.08;
 }
 
 .trust-strip span {
